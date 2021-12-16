@@ -34,7 +34,9 @@ sub _prepare_app {
 	}
 	$self->{'_component'} = $component->new(
 		%p,
-		%{$self->constructor_args},
+		defined $self->constructor_args ? (
+			%{$self->constructor_args},
+		) : (),
 	);
 
 	return;
