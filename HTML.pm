@@ -13,7 +13,9 @@ our $VERSION = 0.01;
 sub _css {
 	my $self = shift;
 
-	$self->{'_component'}->process_css;
+	if ($self->{'_component'}->can('process_css')) {
+		$self->{'_component'}->process_css;
+	}
 
 	return;
 }
