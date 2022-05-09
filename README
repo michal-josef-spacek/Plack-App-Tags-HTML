@@ -1,5 +1,6 @@
 NAME
-    Plack::App::Tags::HTML - Plack application for Tags::HTML objects.
+    Plack::App::Tags::HTML - Plack application for running Tags::HTML
+    objects.
 
 SYNOPSIS
      use Plack::App::Tags::HTML;

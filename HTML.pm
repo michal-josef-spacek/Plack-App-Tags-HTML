@@ -62,7 +62,7 @@ __END__
 
 =head1 NAME
 
-Plack::App::Tags::HTML - Plack application for Tags::HTML objects.
+Plack::App::Tags::HTML - Plack application for running Tags::HTML objects.
 
 =head1 SYNOPSIS
 
