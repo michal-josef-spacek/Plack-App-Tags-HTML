@@ -18,6 +18,7 @@ meta-spec:
 name: Plack-App-Tags-HTML
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt
