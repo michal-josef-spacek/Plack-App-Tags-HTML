@@ -25,7 +25,7 @@ no_index:
 requires:
   English: 0
   Error::Pure: 0
-  Plack::Component::Tags::HTML: 0
+  Plack::Component::Tags::HTML: 0.02
   Plack::Util::Accessor: 0
   perl: 5.8.0
 resources:
