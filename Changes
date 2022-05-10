@@ -1,4 +1,5 @@
 0.02
+ - Fix copyright years.
  - Fix minimal dependency to Plack::Component::Tags::HTML.
 
 0.01 2022-05-09T23:22:27+02:00
