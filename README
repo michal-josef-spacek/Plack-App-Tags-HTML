@@ -43,6 +43,11 @@ METHODS
 
     Returns code of app.
 
+ERRORS
+     prepare_app():
+             Cannot load component '%s'.
+                     Error: %s
+
 EXAMPLE
      use strict;
      use warnings;

@@ -113,6 +113,12 @@ Get code of plack application.
 
 Returns code of app.
 
+=head1 ERRORS
+
+ prepare_app():
+         Cannot load component '%s'.
+                 Error: %s
+
 =head1 EXAMPLE
 
  use strict;
