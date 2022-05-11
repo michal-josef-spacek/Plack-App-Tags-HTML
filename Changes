@@ -1,5 +1,6 @@
 0.02
  - Add ERRORS section to doc.
+ - Add error check for component isa('Tags::HTML').
  - Fix copyright years.
  - Fix minimal dependency to Plack::Component::Tags::HTML.
 

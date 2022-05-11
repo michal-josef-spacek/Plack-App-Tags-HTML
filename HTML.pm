@@ -40,6 +40,9 @@ sub _prepare_app {
 			%{$self->constructor_args},
 		) : (),
 	);
+	if (! $self->{'_component'}->isa('Tags::HTML')) {
+		err "Component must be a instance of 'Tags::HTML' class.";
+	}
 
 	return;
 }
@@ -118,6 +121,7 @@ Returns code of app.
  prepare_app():
          Cannot load component '%s'.
                  Error: %s
+         Component must be a instance of 'Tags::HTML' class.
 
 =head1 EXAMPLE
 

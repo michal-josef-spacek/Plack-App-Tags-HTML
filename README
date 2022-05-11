@@ -47,6 +47,7 @@ ERRORS
      prepare_app():
              Cannot load component '%s'.
                      Error: %s
+             Component must be a instance of 'Tags::HTML' class.
 
 EXAMPLE
      use strict;
