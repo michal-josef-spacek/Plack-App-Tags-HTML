@@ -1,4 +1,4 @@
-0.02
+0.02 2022-05-11T10:19:13+02:00
  - Add ERRORS section to doc.
  - Add error check for component isa('Tags::HTML').
  - Fix copyright years.
