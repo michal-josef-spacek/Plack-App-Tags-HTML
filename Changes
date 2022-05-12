@@ -1,4 +1,5 @@
 0.03
+ - Add second example to doc.
  - Add support for inline package.
  - Fix test dependencies.
 
