@@ -9,7 +9,7 @@ use Error::Pure qw(err);
 use Plack::Util::Accessor qw(component constructor_args data);
 use Symbol::Get;
 
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 sub _css {
 	my $self = shift;
@@ -257,6 +257,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.04
+0.05
 
 =cut
