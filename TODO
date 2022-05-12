@@ -4,7 +4,6 @@ TODO
    menu + main content + footer
 2. Add tests.
 3. Add image of web app to doc.
-6. Test for inline module (as EXAMPLE2 in doc).
 7.
 
 Applied
@@ -13,4 +12,7 @@ Applied
 OK [20220512] skim
 
 5. Add another example to doc with explicit Tags::HTML example
+OK [20220512] skim
+
+6. Test for inline module (as EXAMPLE2 in doc).
 OK [20220512] skim
