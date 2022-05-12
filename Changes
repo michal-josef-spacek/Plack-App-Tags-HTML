@@ -1,4 +1,5 @@
 0.03
+ - Add support for inline package.
  - Fix test dependencies.
 
 0.02 2022-05-11T10:19:13+02:00

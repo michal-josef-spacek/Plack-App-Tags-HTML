@@ -7,6 +7,7 @@ use warnings;
 use English;
 use Error::Pure qw(err);
 use Plack::Util::Accessor qw(component constructor_args data);
+use Symbol::Get;
 
 our $VERSION = 0.03;
 
@@ -20,6 +21,19 @@ sub _css {
 	return;
 }
 
+sub _loaded_component {
+	my ($self, $component) = @_;
+
+	my @names = eval {
+		Symbol::Get::get_names($component);
+	};
+	if ($EVAL_ERROR) {
+		return 0;
+	}
+
+	return 1;
+}
+
 sub _prepare_app {
 	my $self = shift;
 
@@ -29,10 +43,12 @@ sub _prepare_app {
 	);
 
 	my $component = $self->component;
-	eval "require $component;";
-	if ($EVAL_ERROR) {
-		err "Cannot load component '$component'.",
-			'Error', $EVAL_ERROR;
+	if (! $self->_loaded_component($component)) {
+		eval "require $component;";
+		if ($EVAL_ERROR) {
+			err "Cannot load component '$component'.",
+				'Error', $EVAL_ERROR;
+		}
 	}
 	$self->{'_component'} = $component->new(
 		%p,
@@ -154,7 +170,8 @@ Returns code of app.
 L<English>,
 L<Error::Pure>,
 L<Plack::Component::Tags::HTML>,
-L<Plack::Util::Accessor>.
+L<Plack::Util::Accessor>,
+L<Symbol::Get>.
 
 =head1 SEE ALSO
 

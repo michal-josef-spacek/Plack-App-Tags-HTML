@@ -76,7 +76,7 @@ EXAMPLE
 
 DEPENDENCIES
     English, Error::Pure, Plack::Component::Tags::HTML,
-    Plack::Util::Accessor.
+    Plack::Util::Accessor, Symbol::Get.
 
 SEE ALSO
     Tags::HTML

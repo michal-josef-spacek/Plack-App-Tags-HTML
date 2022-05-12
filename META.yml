@@ -31,6 +31,7 @@ requires:
   Error::Pure: 0
   Plack::Component::Tags::HTML: 0.02
   Plack::Util::Accessor: 0
+  Symbol::Get: 0
   perl: 5.8.0
 resources:
   bugtracker: https://github.com/michal-josef-spacek/Plack-App-Tags-HTML
