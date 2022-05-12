@@ -87,8 +87,21 @@ EXAMPLE2
 
              $self->{'tags'}->put(
                      ['b', 'div'],
+                     ['a', 'class', 'my-class'],
                      ['d', join ',', @{$value_hr->{'foo'}}],
                      ['e', 'div'],
+             );
+
+             return;
+     }
+
+     sub _process_css {
+             my $self = shift;
+
+             $self->{'css'}->put(
+                     ['s', '.my-class'],
+                     ['d', 'border', '1px solid black'],
+                     ['e'],
              );
 
              return;
@@ -112,7 +125,9 @@ EXAMPLE2
      # HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
      # > curl http://localhost:5000/
-     # TODO
+     # <!DOCTYPE html>
+     # <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><style type="text/css">.my-class{border:1px solid black;}
+     # </style></head><body><div class="my-class">1,2</div></body></html>
 
 DEPENDENCIES
     English, Error::Pure, Plack::Component::Tags::HTML,
