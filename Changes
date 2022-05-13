@@ -1,4 +1,5 @@
 0.05
+ - Add image of example #1 web app to doc.
  - Fix minimal dependency for Plack::Component::Tags::HTML. For
    reproductible tests without title element.
 

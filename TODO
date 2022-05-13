@@ -3,7 +3,6 @@ TODO
 1. Run multiple components in some order.
    menu + main content + footer
 2. Add tests.
-3. Add image of web app to doc.
 7.
 
 Applied
@@ -16,3 +15,6 @@ OK [20220512] skim
 
 6. Test for inline module (as EXAMPLE2 in doc).
 OK [20220512] skim
+
+3. Add image of web app to doc.
+OK [20220513] skim
