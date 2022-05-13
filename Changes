@@ -1,4 +1,6 @@
 0.05
+ - Fix minimal dependency for Plack::Component::Tags::HTML. For
+   reproductible tests without title element.
 
 0.04 2022-05-12T17:13:17+02:00
  - Add test with inline component.
