@@ -1,4 +1,4 @@
-0.06
+0.06 2022-07-24T22:23:31+02:00
  - Unify LICENSE AND COPYRIGHT section in doc.
  - Update minimal dependency to Plack::Component::Tags::HTML@0.06 with
    <viewport> element and fix test for this new version.
