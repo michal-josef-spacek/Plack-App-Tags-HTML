@@ -66,7 +66,11 @@ sub _prepare_app {
 sub _tags_middle {
 	my $self = shift;
 
-	$self->{'_component'}->process($self->data);
+	my @data;
+	if (defined $self->data) {
+		push @data, @{$self->data};
+	}
+	$self->{'_component'}->process(@data);
 
 	return;
 }
@@ -118,7 +122,7 @@ Default value is undef.
 
 =item * C<data>
 
-Data structure as input argument of Tags::HTML::process().
+Array data structure as input argument of Tags::HTML::process().
 
 Default value is undef.
 
@@ -150,11 +154,11 @@ Returns code of app.
  # Run application.
  my $app = Plack::App::Tags::HTML->new(
          'component' => 'Tags::HTML::Stars',
-         'data' => {
+         'data' => [{
                  1 => 'full',
                  2 => 'half',
                  3 => 'nothing',
-         },
+         }],
  )->to_app;
  Plack::Runner->new->run($app);
 
@@ -215,9 +219,9 @@ Returns code of app.
  # Run application.
  my $app = Plack::App::Tags::HTML->new(
          'component' => 'App',
-         'data' => {
+         'data' => [{
                  'foo' => [1, 2],
-         },
+         }],
  )->to_app;
  Plack::Runner->new->run($app);
 

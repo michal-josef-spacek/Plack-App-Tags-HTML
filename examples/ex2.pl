@@ -40,9 +40,9 @@ use Plack::Runner;
 # Run application.
 my $app = Plack::App::Tags::HTML->new(
         'component' => 'App',
-        'data' => {
+        'data' => [{
                 'foo' => [1, 2],
-        },
+        }],
 )->to_app;
 Plack::Runner->new->run($app);
 

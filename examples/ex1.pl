@@ -9,11 +9,11 @@ use Plack::Runner;
 # Run application.
 my $app = Plack::App::Tags::HTML->new(
         'component' => 'Tags::HTML::Stars',
-        'data' => {
+        'data' => [{
                 1 => 'full',
                 2 => 'half',
                 3 => 'nothing',
-        },
+        }],
 )->to_app;
 Plack::Runner->new->run($app);
 
