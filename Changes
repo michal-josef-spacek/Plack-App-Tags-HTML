@@ -2,6 +2,7 @@
  - API change: 'data' parameter was changed to reference to array of
    arguments for process().
  - Fix examples in doc.
+ - Rename example files in examples/ directory to better names.
 
 0.06 2022-07-24T22:23:31+02:00
  - Unify LICENSE AND COPYRIGHT section in doc.

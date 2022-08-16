@@ -145,6 +145,8 @@ Returns code of app.
 
 =head1 EXAMPLE1
 
+=for comment filename=web_app_with_stars.pl
+
  use strict;
  use warnings;
 
@@ -178,6 +180,8 @@ Returns code of app.
 =end html
 
 =head1 EXAMPLE2
+
+=for comment filename=web_app_with_div.pl
 
  use strict;
  use warnings;
