@@ -32,7 +32,14 @@ METHODS
 
     *       "data"
 
-            Data structure as input argument of Tags::HTML::process().
+            Array data structure as input argument of Tags::HTML::process().
+
+            Default value is undef.
+
+    *       "data_css"
+
+            Reference to array with structure for input argument of
+            "Tags::HTML::process_css()".
 
             Default value is undef.
 

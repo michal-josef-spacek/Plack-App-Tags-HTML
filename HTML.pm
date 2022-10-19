@@ -6,7 +6,7 @@ use warnings;
 
 use English;
 use Error::Pure qw(err);
-use Plack::Util::Accessor qw(component constructor_args data);
+use Plack::Util::Accessor qw(component constructor_args data data_css);
 use Symbol::Get;
 
 our $VERSION = 0.08;
@@ -15,7 +15,12 @@ sub _css {
 	my $self = shift;
 
 	if ($self->{'_component'}->can('process_css')) {
-		$self->{'_component'}->process_css;
+		my @data_css;
+		if (defined $self->data_css) {
+			push @data_css, @{$self->data_css};
+		}
+
+		$self->{'_component'}->process_css(@data_css);
 	}
 
 	return;
@@ -123,6 +128,12 @@ Default value is undef.
 =item * C<data>
 
 Array data structure as input argument of Tags::HTML::process().
+
+Default value is undef.
+
+=item * C<data_css>
+
+Reference to array with structure for input argument of C<Tags::HTML::process_css()>.
 
 Default value is undef.
 
