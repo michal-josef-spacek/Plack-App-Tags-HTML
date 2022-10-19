@@ -3,7 +3,8 @@ TODO
 1. Run multiple components in some order.
    menu + main content + footer
 2. Add tests.
-7.
+7. Test with data().
+8.
 
 Applied
 =======
