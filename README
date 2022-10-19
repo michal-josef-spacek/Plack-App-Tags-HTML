@@ -59,11 +59,11 @@ EXAMPLE1
      # Run application.
      my $app = Plack::App::Tags::HTML->new(
              'component' => 'Tags::HTML::Stars',
-             'data' => {
+             'data' => [{
                      1 => 'full',
                      2 => 'half',
                      3 => 'nothing',
-             },
+             }],
      )->to_app;
      Plack::Runner->new->run($app);
 
@@ -115,9 +115,9 @@ EXAMPLE2
      # Run application.
      my $app = Plack::App::Tags::HTML->new(
              'component' => 'App',
-             'data' => {
+             'data' => [{
                      'foo' => [1, 2],
-             },
+             }],
      )->to_app;
      Plack::Runner->new->run($app);
 
