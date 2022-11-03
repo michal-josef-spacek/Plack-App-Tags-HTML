@@ -1,4 +1,5 @@
 0.09
+ - API change: Add 'data_init' accessor.
 
 0.08 2022-10-20T11:15:43+02:00
  - API change: Add 'data_css' accessor.
