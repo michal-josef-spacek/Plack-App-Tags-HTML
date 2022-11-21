@@ -71,8 +71,12 @@ sub _prepare_app {
 sub _process_actions {
 	my $self = shift;
 
-	if (defined $self->data_init && $self->{'_component'}->can('init')) {
-		$self->{'_component'}->init(@{$self->data_init});
+	if ($self->{'_component'}->can('init')) {
+		my @data = ();
+		if (defined $self->data_init) {
+			push @data, @{$self->data_init};
+		}
+		$self->{'_component'}->init(@data);
 	}
 
 	return;
