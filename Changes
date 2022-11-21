@@ -1,5 +1,6 @@
 0.10
  - Add test for 'data_init' accessor.
+ - Add test for running with init() method without 'data_init' accessor.
  - Fix running with init() method without 'data_init' accessor.
 
 0.09 2022-11-03T21:36:40+01:00

@@ -23,6 +23,7 @@ README
 SIGNATURE
 t/lib/Hello.pm
 t/lib/HelloInit.pm
+t/lib/HelloInit2.pm
 t/Plack-App-Tags-HTML/01-use.t
 t/Plack-App-Tags-HTML/02-version.t
 t/Plack-App-Tags-HTML/03-app-hello.t
