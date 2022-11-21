@@ -5,7 +5,6 @@ TODO
 2. Add tests.
 7. Test with data().
 8. Test with data_css().
-9. Test with data_init().
 10.
 
 Applied
@@ -21,3 +20,6 @@ OK [20220512] skim
 
 3. Add image of web app to doc.
 OK [20220513] skim
+
+9. Test with data_init().
+OK [20221121] skim
