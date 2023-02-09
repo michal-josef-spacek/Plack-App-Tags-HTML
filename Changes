@@ -1,4 +1,5 @@
 0.11
+ - Fix doc and regen examples.
 
 0.10 2023-02-09T11:58:28+01:00
  - Add test for 'data_init' accessor.
