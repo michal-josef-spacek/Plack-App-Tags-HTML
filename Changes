@@ -1,4 +1,4 @@
-0.11
+0.11 2023-02-10T23:06:45+01:00
  - Fix doc and regen examples.
  - Update copyright years.
  - Update to new Plack::Component::Tags::HTML@0.12.
