@@ -1,4 +1,6 @@
 0.12
+ - Place explicitly inherited _prepare_app(). There will be content in
+   future.
 
 0.11 2023-02-10T23:06:45+01:00
  - Fix doc and regen examples.

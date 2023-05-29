@@ -42,6 +42,8 @@ sub _loaded_component {
 sub _prepare_app {
 	my $self = shift;
 
+	$self->SUPER::_prepare_app();
+
 	my %p = (
 		'css' => $self->css,
 		'tags' => $self->tags,
