@@ -12,7 +12,7 @@ use Symbol::Get;
 our $VERSION = 0.13;
 
 sub _css {
-	my $self = shift;
+	my ($self, $env) = @_;
 
 	if ($self->{'_component'}->can('process_css')) {
 		my @data_css;
@@ -71,7 +71,7 @@ sub _prepare_app {
 }
 
 sub _process_actions {
-	my $self = shift;
+	my ($self, $env) = @_;
 
 	if ($self->{'_component'}->can('init')) {
 		my @data = ();
@@ -85,7 +85,7 @@ sub _process_actions {
 }
 
 sub _tags_middle {
-	my $self = shift;
+	my ($self, $env) = @_;
 
 	my @data;
 	if (defined $self->data) {

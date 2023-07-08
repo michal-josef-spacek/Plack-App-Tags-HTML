@@ -29,7 +29,7 @@ no_index:
 requires:
   English: 0
   Error::Pure: 0
-  Plack::Component::Tags::HTML: 0.12
+  Plack::Component::Tags::HTML: 0.15
   Plack::Util::Accessor: 0
   Symbol::Get: 0
   perl: 5.8.0
