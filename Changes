@@ -1,4 +1,4 @@
-0.13
+0.13 2023-07-18T15:25:37+02:00
  - Add tests for 'data' parameter.
  - Improve links in doc.
  - Update to Plack::Component::Tags::HTML@0.15.
