@@ -3,7 +3,6 @@ TODO
 1. Run multiple components in some order.
    menu + main content + footer
 2. Add tests.
-7. Test with data().
 8. Test with data_css().
 10.
 
@@ -23,3 +22,6 @@ OK [20220513] skim
 
 9. Test with data_init().
 OK [20221121] skim
+
+7. Test with data().
+OK [20230718] skim

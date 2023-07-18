@@ -1,4 +1,5 @@
 0.13
+ - Add tests for 'data' parameter.
  - Improve links in doc.
  - Update to Plack::Component::Tags::HTML@0.15.
 
