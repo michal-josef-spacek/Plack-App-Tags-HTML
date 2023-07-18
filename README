@@ -39,14 +39,14 @@ METHODS
     *       "data_css"
 
             Reference to array with structure for input argument of
-            "Tags::HTML::process_css()".
+            Tags::HTML::process_css().
 
             Default value is undef.
 
     *       "data_init"
 
             Reference to array with structure for input argument of
-            "Tags::HTML::init()".
+            Tags::HTML::init().
 
             Default value is undef.
 

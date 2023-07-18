@@ -106,7 +106,7 @@ __END__
 
 =head1 NAME
 
-Plack::App::Tags::HTML - Plack application for running Tags::HTML objects.
+Plack::App::Tags::HTML - Plack application for running L<Tags::HTML> objects.
 
 =head1 SYNOPSIS
 
@@ -117,7 +117,7 @@ Plack::App::Tags::HTML - Plack application for running Tags::HTML objects.
 
 =head1 METHODS
 
-Class inherites Plack::Component::Tags::HTML.
+Class inherites L<Plack::Component::Tags::HTML>.
 
 =head2 C<new>
 
@@ -131,31 +131,31 @@ Returns instance of object.
 
 =item * C<component>
 
-Tags::HTML component.
+L<Tags::HTML> component.
 
 Option is required.
 
 =item * C<constructor_args>
 
-Tags::HTML component constructor arguments.
+L<Tags::HTML> component constructor arguments.
 
 Default value is undef.
 
 =item * C<data>
 
-Array data structure as input argument of Tags::HTML::process().
+Array data structure as input argument of L<Tags::HTML::process()|Tags::HTML/process>.
 
 Default value is undef.
 
 =item * C<data_css>
 
-Reference to array with structure for input argument of C<Tags::HTML::process_css()>.
+Reference to array with structure for input argument of L<Tags::HTML::process_css()|Tags::HTML/process_css>.
 
 Default value is undef.
 
 =item * C<data_init>
 
-Reference to array with structure for input argument of C<Tags::HTML::init()>.
+Reference to array with structure for input argument of L<Tags::HTML::init()|Tags::HTML/init>.
 
 Default value is undef.
 
