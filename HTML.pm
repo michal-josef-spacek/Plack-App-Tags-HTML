@@ -6,7 +6,7 @@ use warnings;
 
 use English;
 use Error::Pure qw(err);
-use Plack::Util::Accessor qw(component constructor_args data data_css data_init);
+use Plack::Util::Accessor qw(component constructor_args data data_css data_init data_prepare);
 use Symbol::Get;
 
 our $VERSION = 0.14;
@@ -65,6 +65,15 @@ sub _prepare_app {
 	);
 	if (! $self->{'_component'}->isa('Tags::HTML')) {
 		err "Component must be a instance of 'Tags::HTML' class.";
+	}
+
+	# Init prepared data.
+	if ($self->{'_component'}->can('prepare')) {
+		my @data = ();
+		if (defined $self->data_prepare) {
+			push @data, @{$self->data_prepare};
+		}
+		$self->{'_component'}->prepare(@data);
 	}
 
 	return;
@@ -156,6 +165,16 @@ Default value is undef.
 =item * C<data_init>
 
 Reference to array with structure for input argument of L<Tags::HTML::init()|Tags::HTML/init>.
+
+This structure is used in init phase of each web app call.
+
+Default value is undef.
+
+=item * C<data_prepare>
+
+Reference to array with structure for input argument of L<Tags::HTML::init()|Tags::HTML/init>.
+
+This structure is used in init phase of preparation of web app.
 
 Default value is undef.
 

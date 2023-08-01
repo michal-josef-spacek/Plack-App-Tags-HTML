@@ -1,4 +1,5 @@
 0.14
+ - Add data_prepare() accessor for data initialization in prepare phase.
 
 0.13 2023-07-18T15:25:37+02:00
  - Add tests for 'data' parameter.
