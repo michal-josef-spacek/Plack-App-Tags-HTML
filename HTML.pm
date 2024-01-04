@@ -172,9 +172,9 @@ Default value is undef.
 
 =item * C<data_prepare>
 
-Reference to array with structure for input argument of L<Tags::HTML::init()|Tags::HTML/init>.
+Reference to array with structure for input argument of L<Tags::HTML::prepare()|Tags::HTML/prepare>.
 
-This structure is used in init phase of preparation of web app.
+This structure is used in prepare phase of web app run.
 
 Default value is undef.
 
