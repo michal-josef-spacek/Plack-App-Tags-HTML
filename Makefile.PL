@@ -20,7 +20,7 @@ readme_from 'HTML.pm';
 recursive_author_tests('xt');
 requires 'English' => 0;
 requires 'Error::Pure' => 0;
-requires 'Plack::Component::Tags::HTML' => 0.15;
+requires 'Plack::Component::Tags::HTML' => 0.17;
 requires 'Plack::Util::Accessor' => 0;
 requires 'Symbol::Get' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Plack-App-Tags-HTML/issues';

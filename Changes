@@ -1,4 +1,6 @@
 0.16
+ - Copy CSS links, Javascript and Javascript links from component to main
+   object.
 
 0.15 2024-01-04T01:23:41+01:00
  - Fix doc.

@@ -76,6 +76,16 @@ sub _prepare_app {
 		$self->{'_component'}->prepare(@data);
 	}
 
+	# Copy CSS links from component to main object.
+	if ($self->{'_component'}->can('css_src')) {
+		$self->css_src($self->{'_component'}->css_src);
+	}
+
+	# Copy Javascript links from component to main object.
+	if ($self->{'_component'}->can('script_js_src')) {
+		$self->script_js_src($self->{'_component'}->script_js_src);
+	}
+
 	return;
 }
 
@@ -89,6 +99,14 @@ sub _process_actions {
 		}
 		$self->{'_component'}->init(@data);
 	}
+
+	# Copy Javascript code from component to main object.
+	if ($self->{'_component'}->can('script_js')) {
+		$self->script_js($self->{'_component'}->script_js);
+	}
+
+	# Init begin of page.
+	$self->SUPER::_process_actions($env);
 
 	return;
 }
