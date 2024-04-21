@@ -3,7 +3,6 @@ TODO
 1. Run multiple components in some order.
    menu + main content + footer
 2. Add tests.
-8. Test with data_css().
 10. Present better sense of prepare() vs init().
 11.
 
@@ -26,3 +25,6 @@ OK [20221121] skim
 
 7. Test with data().
 OK [20230718] skim
+
+8. Test with data_css().
+OK [20240421] skim
