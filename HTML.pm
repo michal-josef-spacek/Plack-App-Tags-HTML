@@ -93,11 +93,11 @@ sub _process_actions {
 	my ($self, $env) = @_;
 
 	if ($self->{'_component'}->can('init')) {
-		my @data = ();
 		if (defined $self->data_init) {
-			push @data, @{$self->data_init};
+			$self->{'_component'}->init(@{$self->data_init});
+		} else {
+			$self->{'_component'}->init;
 		}
-		$self->{'_component'}->init(@data);
 	}
 
 	# Copy Javascript code from component to main object.
