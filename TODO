@@ -4,7 +4,8 @@ TODO
    menu + main content + footer
 2. Add tests.
 10. Present better sense of prepare() vs init().
-11.
+11. Add cleanup?
+12.
 
 Applied
 =======
