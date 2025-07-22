@@ -5,7 +5,8 @@ TODO
 2. Add tests.
 10. Present better sense of prepare() vs init().
 11. Add cleanup?
-12.
+12. Check if data_init returns reference to array?
+13.
 
 Applied
 =======
