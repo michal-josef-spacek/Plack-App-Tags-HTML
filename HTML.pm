@@ -14,14 +14,12 @@ our $VERSION = 0.18;
 sub _css {
 	my ($self, $env) = @_;
 
-	if ($self->{'_component'}->can('process_css')) {
-		my @data_css;
-		if (defined $self->data_css) {
-			push @data_css, @{$self->data_css};
-		}
-
-		$self->{'_component'}->process_css(@data_css);
+	my @data_css;
+	if (defined $self->data_css) {
+		push @data_css, @{$self->data_css};
 	}
+
+	$self->{'_component'}->process_css(@data_css);
 
 	return;
 }
