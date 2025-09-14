@@ -6,7 +6,9 @@ TODO
 10. Present better sense of prepare() vs init().
 11. Add cleanup?
 12. Check if data_init returns reference to array?
-13.
+13. Could I check version of Tags::HTML in component?
+    I cound fix to the some version of Tags::HTML and remove checks for new methods (like css_src, etc).
+14.
 
 Applied
 =======
