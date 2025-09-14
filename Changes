@@ -1,4 +1,4 @@
-0.18
+0.18 2025-09-14T15:46:21+02:00
  - Add test for bad component.
  - Fix typo in ERRORS section.
  - Improve init() code.
