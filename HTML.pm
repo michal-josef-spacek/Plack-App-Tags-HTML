@@ -9,7 +9,7 @@ use Error::Pure qw(err);
 use Plack::Util::Accessor qw(component constructor_args data data_css data_init data_prepare);
 use Symbol::Get;
 
-our $VERSION = 0.18;
+our $VERSION = 0.19;
 
 sub _css {
 	my ($self, $env) = @_;
@@ -404,6 +404,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.18
+0.19
 
 =cut
