@@ -206,7 +206,7 @@ Returns code of app.
 
 =head1 ERRORS
 
- prepare_app():
+ to_app():
          Cannot load component '%s'.
                  Error: %s
          Component must be a instance of 'Tags::HTML' class.
