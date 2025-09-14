@@ -3,6 +3,7 @@ abstract: 'Plack application for running Tags::HTML objects.'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
+  Class::Utils: 0
   English: 0
   Error::Pure::Utils: 0
   ExtUtils::MakeMaker: 6.59

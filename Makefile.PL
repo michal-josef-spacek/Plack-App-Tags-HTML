@@ -26,6 +26,7 @@ requires 'Symbol::Get' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Plack-App-Tags-HTML/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Plack-App-Tags-HTML';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Plack-App-Tags-HTML';
+test_requires 'Class::Utils' => 0;
 test_requires 'English' => 0;
 test_requires 'Error::Pure::Utils' => 0;
 test_requires 'File::Object' => 0;

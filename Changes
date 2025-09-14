@@ -1,4 +1,5 @@
 0.19
+ - Add test for constructor parameters.
  - Add test for no component.
  - Fix test dependencies.
 
