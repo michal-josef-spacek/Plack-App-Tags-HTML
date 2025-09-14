@@ -41,4 +41,4 @@ resources:
   homepage: https://github.com/michal-josef-spacek/Plack-App-Tags-HTML
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/michal-josef-spacek/Plack-App-Tags-HTML
-version: '0.19'
+version: '0.20'

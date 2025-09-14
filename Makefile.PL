@@ -36,7 +36,7 @@ test_requires 'Tags::HTML' => 0.08;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;
-version '0.19';
+version '0.20';
 
 # Run.
 WriteAll();
